@@ -24,7 +24,6 @@ You can run the code in Python 2.7. It uses the GULP (http://gulp.curtin.edu.au/
 
 python CN_plus Input/SrTiO3/STO.input
 
-===============================================
 
 Input files:
 ===============================================
@@ -59,7 +58,6 @@ The "operation_{i}" keywords defines the operation to run in step i (one of the 
 
 The progress of the simulation is stored in the file specified by the keyword "output_file" in the .inputs file.
 
-===============================================
 
 
 Example:
