@@ -1,5 +1,5 @@
 # CN_plus
-Local search algorithms for Crystal Structure Prediction.
+Local search algorithms for the Crystal Structure Prediction problem.
 
 This project is part of the paper published in SEA 2020 (arXiv version: https://arxiv.org/abs/2003.12442).
 
