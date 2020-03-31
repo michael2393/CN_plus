@@ -20,7 +20,10 @@ Write an input file that includes all keywords with their default values to the 
 Execution:
 ===============================================
 
-You can run the code in Python 2.7. It uses the GULP (http://gulp.curtin.edu.au/gulp/) library to perform energy calculations and structure optimization.
+You can run the code in Python 2.7. It uses the GULP (http://gulp.curtin.edu.au/gulp/) library to perform energy calculations and structure optimization. You can download it here https://gulp.curtin.edu.au/gulp/request.cfm?rel=download.
+This project was implemented using GULP 5.1.
+
+After you download GULP, extract it and place it in the same directory as CN_plus. In addition, in the .inputs file, set the keyword "gulp_executable" to point the gulp executable (e.g., gulp_executable=/gulp-5.1/Src/gulp).
 
 python CN_plus Input/SrTiO3/STO.input
 
