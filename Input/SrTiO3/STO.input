@@ -1,0 +1,58 @@
+#
+# General
+# Available functions: optimization, read_results_from_file
+#                      compare_basin_hopping_axes (use along with phase to indicate the number of experiments)
+#
+function=compare_basin_hopping_axes
+phases = 2
+output_file = /media/michael/Teras/Coding/Material_search_tool/Results/STO.cnplus
+#calculator_cores = 2
+
+#
+# Unit cell parameters
+#
+grid_points=10,10,10
+grid_spacing=0.58,0.58
+angles=90,90
+temp=0.025
+
+#
+# Operations
+# Available operations: random_structure, axes, swap_all, swap_atoms, relax_structure
+#                       relax_unit_cell, input_structure (need to define input_structure_folder)
+#
+operations = 3
+operation_1 = random_structure
+operation_2 = axes
+operation_3 = relax_structure
+initial_structure_folder = /media/michael/Teras/Coding/Material_search_tool/Input/Input_Structures/
+
+
+#
+# For Functions: 'compare_basin_hopping_axes' and 'read_results_from_file'
+#
+global_minimum_energy = -31.7
+whiskers_coarse = -25, -30, -30.5
+whiskers_fine = -30.5, -31, -31.5, -31.6, -31.69
+
+#
+# For Functions: 'read_results_from_file'
+#
+pkl_file = /media/michael/Teras/Coding/Material_search_tool/Results/Energies_Times_Axes.pkl
+
+
+
+#
+# GULP
+#
+gulp_executable=/gulp-5.1/Src/gulp
+calculator_time_limit=300
+gulp_library=Input/SrTiO3/STO.lib
+gulp_keywords_calculate_energy=single, c6
+#noelectrostatics, cartesian
+gulp_keywords_relax=opti, c6, pot, conp, conj, unfix
+gulp_keywords_relax_unit_cell = opti, c6, pot, cellonly
+gulp_options_relax = time 5 minutes, maxcyc 2000
+#stepmx 0.01, maxcyc 20
+gulp_options_relax_unit_cell = time 2 minutes
+
