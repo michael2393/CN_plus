@@ -5,7 +5,7 @@
 #
 function=compare_basin_hopping_axes
 phases = 2
-output_file = /media/michael/Teras/Coding/Material_search_tool/Results/STO.cnplus
+output_file = /path/to/Results/STO.cnplus
 #calculator_cores = 2
 
 #
@@ -25,7 +25,7 @@ operations = 3
 operation_1 = random_structure
 operation_2 = axes
 operation_3 = relax_structure
-initial_structure_folder = /media/michael/Teras/Coding/Material_search_tool/Input/Input_Structures/
+initial_structure_folder = /path/to/Input/Input_Structures/
 
 
 #
@@ -38,7 +38,7 @@ whiskers_fine = -30.5, -31, -31.5, -31.6, -31.69
 #
 # For Functions: 'read_results_from_file'
 #
-pkl_file = /media/michael/Teras/Coding/Material_search_tool/Results/Energies_Times_Axes.pkl
+pkl_file = /path/to/Results/Energies_Times_Axes.pkl
 
 
 
