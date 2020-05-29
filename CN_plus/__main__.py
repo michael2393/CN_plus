@@ -90,7 +90,6 @@ def main(args=None):
                 print('The file "%s" is a valid input file.' % (input_file))
                 print("")
                 print("\tPlease note that keywords, options and settings for GULP/VASP will be verified in GULP/VASP calculations.")
-                print("\tAlso, when the initial structure is composed, the validity of any supplied swap groups will be verified at that point.")
                 print("")
 
 
