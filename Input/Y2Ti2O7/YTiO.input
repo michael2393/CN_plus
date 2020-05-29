@@ -5,7 +5,7 @@
 #
 function=read_results_from_file
 phases = 3
-output_file = /media/michael/Teras/Coding/Material_search_tool/Results/YTiO.cnplus
+output_file = /path/to/Results/YTiO.cnplus
 #calculator_cores = 2
 
 #
@@ -24,7 +24,7 @@ temp=0.025
 operations = 2
 operation_1 = random_structure
 operation_2 = axes
-initial_structure_folder = /media/michael/Teras/Coding/Material_search_tool/Input/Input_Structures/
+initial_structure_folder = /path/to/Input/Input_Structures/
 
 
 #
@@ -37,7 +37,7 @@ whiskers_fine = -30.0, -30.4, -30.8, -31.2, -31.4, -31.6, -31.69
 #
 # For Functions: 'read_results_from_file'
 #
-pkl_file = /media/michael/Teras/Coding/Material_search_tool/Results/Energies_Times_Axes.pkl
+pkl_file = /path/to/Results/Energies_Times_Axes.pkl
 
 
 
