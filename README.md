@@ -1,7 +1,7 @@
 # CN_plus
 Local search algorithms for the Crystal Structure Prediction problem.
 
-This project is part of the paper published in SEA 2020 (http://www.sea2020.dmi.unict.it/LIPIcs160/LIPIcs-SEA-2020-21.pdf).
+This project is part of the paper published in SEA 2020 (https://drops.dagstuhl.de/opus/volltexte/2020/12095/).
 
 
 Arguments
@@ -47,7 +47,7 @@ In the .input file, you can choose which function of the code to run, such as op
 
 optimization: This function runs the operations that you specify and their order. The operations that you can run are:
 (1) random_structure: Creates a random (valid) structure (number and types of atoms as in .atoms file, and unit cell as defined in the .input file).
-(2) axes, swap_all, swap_atoms: Runs the algorithm (greedy) as described in the paper "Crystal Structure Prediction via Oblivious Local Search" (http://www.sea2020.dmi.unict.it/LIPIcs160/LIPIcs-SEA-2020-21.pdf), using the corresponding neighbourhood.
+(2) axes, swap_all, swap_atoms: Runs the algorithm (greedy) as described in the paper "Crystal Structure Prediction via Oblivious Local Search" (https://drops.dagstuhl.de/opus/volltexte/2020/12095/), using the corresponding neighbourhood.
 (3) relax_structure: Runs GULP optimization in order find the local minimum.
 (4) relax_unit_cell: Runs GULP optimization but only changes the unit cell parameters (not the positions of the atoms).
 (5) input_structure: Reads a .cif file from the folder indicated by the keyword "initial_structure_folder" in the .inputs file.
