@@ -108,17 +108,16 @@ class structure_class:
         atom: int
             The atom to check whether it overlaps with other atoms.
         check_up_to: int
-            This method checks if the given atom overlaps with the rest of the atoms with indexes 0 to 'check_up_to'.
+            This method checks if the given atom overlaps with the rest of the atoms with indices 0 to 'check_up_to'.
         get_all_overlapping_atoms: boolean
-            If this parameter is True, then this method searches for all possible overlaps, otherwise, if
-            one overlapping atoms is found, it stops.
+            If this parameter is True, then this method searches for all atoms that it overlaps with.
 
         Return:
         ------
         valid: boolean
             This parameter specifies if the given atom is 'valid' or not
         overlappingAtoms: list
-            It contains all indexes with the atoms that the given atom overlaps with.
+            It contains all indices with the atoms that the given atom overlaps with.
         """
         if (check_up_to == 0):
             return True, []
